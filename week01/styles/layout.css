@@ -11,36 +11,33 @@
     box-sizing: border-box;
 }
 
-body {
+.body-first-wrap {
     font-size: 1.2em;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
 }
 
 /*HEADER*/
 
 header {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     font-family: var(--paragraph-font);
+    background-color: rgb(51, 51, 51);
     
 }
 
 h1 {
-    font-size: 1.5em;
-    height: 3em;
-    min-height: 1em;
-    max-height: 3em;
-    text-align: center;
-    width: 100%;
-    background-color: rgb(51, 51, 51);
+    align-self: center;
+    justify-self: center;
     color: white;
 }
 
 header nav {
-    height: 3em;
+    height: 70%;
     display: flex;
     justify-content: space-around;
+    align-self: end;
     font-family: var(--paragraph-font);
 }
 
@@ -67,7 +64,7 @@ a, a:visited {
 .main-wrap {
     display: flex;
     flex-wrap: wrap;
-    height: 20em;
+    height: 100%;
     flex: 1;
 }
 
