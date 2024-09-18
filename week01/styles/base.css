@@ -92,7 +92,8 @@ main {
     width: 100%;
     padding: 0;
     /* ---------- */
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
     justify-items: center;
     align-items: center;
 }
@@ -114,18 +115,19 @@ main {
     border-radius: 1em;
     border: 1px solid black;
     max-height: 100%;
-    width: 98%;
+    width: 70%;
     height: 90%;
 }
 
 .main-content {
     /* main-wrap child which is grid*/
     display: grid;
+    justify-self: end;
     grid-template-rows: 1fr 2fr 1fr 2fr;
     overflow: auto;
     /* Only if text overflows the box... */
     flex-direction: column;
-    grid-column: 1/2;
+    grid-column: 1/4;
     justify-content: space-between;
     font-family: var(--paragraph-font);
 }
@@ -142,6 +144,7 @@ main {
 
 .my-description p, .country-description p {
     align-self: center;
+    font-size: 16.5px;
 }
 
 figcaption {
@@ -168,8 +171,9 @@ figure {
     display: grid;
     grid-template-rows: 2em 1fr;
     gap: 10px;
-    grid-column: 2/3;
+    grid-column: 4/6;
     font-family: var(--paragraph-font);
+    justify-self: start;
 }
 
 .aside-content ul {
