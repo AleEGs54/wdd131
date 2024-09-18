@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --heading-font: Raleway;
+    --paragraph-font: Montserrat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body-first-wrap {
+    font-size: 1.2em;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+
+/*HEADER*/
+
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-family: var(--paragraph-font);
+    background-color: rgb(51, 51, 51);
+    /* Crea 5 rows y on 2 para el nav y 3 para el header */
+}
+
+.h1-wrap {
+    /* Direct son from Header which is grid */
+
+}
+
+h1 {
+    align-self: center;
+    justify-self: center;
+    color: white;
+}
+
+header nav {
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-self: end;
+    font-family: var(--paragraph-font);
+}
+
+.link-wrap {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*The last 3 lines, including flex, are for centering the text*/
+}
+
+.link-wrap:hover {
+    background-color: #313131;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+/*MAIN*/
+.main-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    flex: 1;
+}
+
+.main-content {
+    flex: 2;
+    background-color: grey;
+    padding: 10px;
+    /* width: 70%; */
+    font-family: var(--paragraph-font);
+}
+
+.aside-content {
+    flex: 1;
+    padding: 10px;
+    font-family: var(--paragraph-font);
+
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #313131;
+    color: white;
+    height: 25vh;
+    padding: 10px;
+    font-family: var(--paragraph-font);
+}
