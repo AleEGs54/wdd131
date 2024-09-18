@@ -84,6 +84,7 @@ header a:visited {
 main {
     /* Direct child of .body-first-wrap which is grid */
     grid-row: 3/12;
+    max-width: 1498.89;
 }
 
 .main-wrap {
@@ -142,7 +143,8 @@ main {
     /* The flex row is to place the text side by side with the image */
 }
 
-.my-description p, .country-description p {
+.my-description p,
+.country-description p {
     align-self: center;
     font-size: 16.5px;
 }
