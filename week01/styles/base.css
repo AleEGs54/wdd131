@@ -120,7 +120,8 @@ main {
 
 .main-content {
     /* main-wrap child which is grid*/
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
     overflow: auto;
     /* Only if text overflows the box... */
     flex-direction: column;
@@ -139,6 +140,10 @@ main {
     /* The flex row is to place the text side by side with the image */
 }
 
+.my-description p, .country-description p {
+    align-self: center;
+}
+
 figcaption {
     font-size: medium;
     text-align: center;
@@ -155,6 +160,7 @@ figure {
     padding-bottom: 10px;
     width: 50%;
     align-self: center;
+    justify-self: center;
 }
 
 .aside-content {
