@@ -69,7 +69,7 @@ header nav {
     /*The last 3 lines, including flex, are for centering the text*/
 }
 
-nav div:hover {
+.link-wrap:hover {
     background-color: #313131;
 }
 
