@@ -10,9 +10,7 @@
     box-sizing: border-box;
 }
 
-body {
-    max-width: 1498.89px;
-}
+
 
 .body-first-wrap {
     /* The main parent */
@@ -88,7 +86,7 @@ header a:visited {
 main {
     /* Direct child of .body-first-wrap which is grid */
     grid-row: 3/12;
-    
+    max-width: 1498.89px;
 }
 
 .main-wrap {
