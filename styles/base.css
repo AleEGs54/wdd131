@@ -10,11 +10,16 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1498.89px;
+}
+
 .body-first-wrap {
     /* The main parent */
     font-size: 1.2em;
     display: grid;
     grid-template-rows: repeat(13, 3em);
+    margin: 1rem auto;
 }
 
 /*HEADER*/
@@ -83,7 +88,7 @@ header a:visited {
 main {
     /* Direct child of .body-first-wrap which is grid */
     grid-row: 3/12;
-    max-width: 1498.89px;
+    
 }
 
 .main-wrap {
