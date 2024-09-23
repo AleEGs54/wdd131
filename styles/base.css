@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --heading-font: Raleway;
+    --heading-font: Montserrat;
     --paragraph-font: Montserrat;
 }
 
@@ -70,7 +69,7 @@ header nav {
     /*The last 3 lines, including flex, are for centering the text*/
 }
 
-.link-wrap:hover {
+nav div:hover {
     background-color: #313131;
 }
 
