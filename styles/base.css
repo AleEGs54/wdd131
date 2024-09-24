@@ -1,4 +1,3 @@
-
 :root {
     --heading-font: Montserrat;
     --paragraph-font: Montserrat;
@@ -10,42 +9,23 @@
     box-sizing: border-box;
 }
 
-
-
-.body-first-wrap {
-    /* The main parent */
-    font-size: 1.2em;
-    display: grid;
-    grid-template-rows: repeat(13, 3em);
-    margin: 1rem auto;
-}
-
 /*HEADER*/
 
 header {
     /* Direct child of .body-first-wrap which is grid */
-    display: grid;
-    grid-row: 1/3;
-    grid-template-rows: repeat(5, 1fr);
     font-family: var(--paragraph-font);
     /* Crea 5 rows y pon 2 para el nav y 3 para el header */
 }
 
-.h1-wrap {
+h1 {
     /* Direct son from Header which is grid */
-    display: flex;
-    grid-row: 1/4;
     background-color: #174e70;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: larger;
 }
 
-h1 {
-    /* .h1-wrap son. Not grid. */
-    color: white;
-    font-size: x-large;
-}
 
 h1 span,
 .lastModified {
@@ -53,26 +33,28 @@ h1 span,
 }
 
 nav {
-    background-color: #333;
+    background-color: #2b2b2b;
     display: flex;
 }
-  
-  nav a,
-  nav a:visited {
-    flex: 1 1 100%;
+
+nav a,
+nav a:visited {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
     display: block;
     font-size: 1rem;
     text-align: center;
     padding: 0.5rem;
     color: #fff;
     text-decoration: none;
-  }
-  
-  nav a:hover {
+}
+
+nav a:hover {
     color: #fff;
     background-color: rgb(66, 66, 66);
     font-weight: 600;
-  }
+}
 
 header a,
 header a:visited {
@@ -81,69 +63,78 @@ header a:visited {
 }
 
 /*MAIN*/
-main {
-    /* Direct child of .body-first-wrap which is grid */
-    grid-row: 3/12;
-    max-width: 1498.89px;
-}
 
-.main-wrap {
+main {
     display: grid;
-    height: 100%;
-    width: 100%;
     padding: 0;
     /* ---------- */
-    grid-template-columns: repeat(5, 1fr);
-    gap: 10px;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    margin: 10px auto;
+    max-width: 960px;
 }
 
 .h2-wrap {
     display: flex;
     background-color: #174e70;
     text-align: center;
-    border-radius: 1em 1em 0 0;
+    border-radius: .5em .5em 0 0;
     min-height: 50px;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: medium;
+    font-size: 0.8em;
+
 }
 
 .card {
     /* This is for styling .main-content and .aside-content together*/
-    border-radius: 1em;
-    border: 1px solid black;
-    width: 70%;
-    height: 90%;
+    border-radius: .5em;
+    border: 1px solid rgb(183, 183, 183);
+    margin: 5px;
 }
 
 .main-content {
     /* main-wrap child which is grid*/
-    display: grid;
+
     justify-self: end;
-    grid-template-rows: 1fr 2fr 1fr 2fr;
-    overflow: auto;
+    grid-template-rows: 1fr 1fr;
+
     /* Only if text overflows the box... */
-    grid-column: 1/4;
     font-family: var(--paragraph-font);
 }
 
-.my-description,
+
 .country-description {
     margin: 15px;
     gap: 15px;
     display: flex;
     flex-direction: row;
-    font-size: large;
+    flex-wrap: wrap;
+    align-items: flex-start;
     /* The flex row is to place the text side by side with the image */
+}
+
+.my-description img,
+.country-description img {
+    max-width: 180px;
+    /* Ajusta el tamaño máximo de la imagen */
+    margin: 15px;
+    /* Espacio entre la imagen y el texto */
+}
+
+.my-description img {
+    float: right;
 }
 
 .my-description p,
 .country-description p {
     align-self: center;
-    font-size: 16.5px;
+    flex: 1;
+    font-size: 15px;
+}
+
+.my-description p {
+    margin: 1rem;
 }
 
 figcaption {
@@ -156,13 +147,12 @@ figure {
     /* If the page wraps, this will keep the image at the center */
 }
 
-.country-title-wrap {
+h3 {
     text-align: center;
     border-bottom: 1px solid grey;
     padding-bottom: 10px;
-    width: 50%;
-    align-self: center;
-    justify-self: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .aside-content {
@@ -170,7 +160,6 @@ figure {
     display: grid;
     grid-template-rows: 2em 1fr;
     gap: 10px;
-    grid-column: 4/6;
     font-family: var(--paragraph-font);
     justify-self: start;
 }
@@ -193,7 +182,7 @@ footer {
     color: white;
     padding: 10px;
     font-family: var(--paragraph-font);
-    grid-row: 12/14;
+
     text-align: center;
     justify-content: center;
     align-items: center;
