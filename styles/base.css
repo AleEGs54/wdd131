@@ -96,8 +96,6 @@ main {
 .main-content {
     /* main-wrap child which is grid*/
 
-    justify-self: end;
-    grid-template-rows: 1fr 1fr;
 
     /* Only if text overflows the box... */
     font-family: var(--paragraph-font);
