@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 131 - Dynamic Web Fundamentals - Alejandro Esteves</title>
-    <meta name="description" content="Welcome to my page! My name is Alejandro Esteves and this is for WDD 131 - Dynamic Web Fundamentals">
+    <meta name="description"
+        content="Welcome to my page! My name is Alejandro Esteves and this is for WDD 131 - Dynamic Web Fundamentals">
     <meta name="author" content="Alejandro Esteves">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,40 +16,52 @@
     <link rel="stylesheet" href="styles/place-small.css">
     <script href="scripts/place.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1>Place Title</h1>
     </header>
     <main>
         <picture>
-            <source media="(min-width: )" srcset="">
-            <source media="(min-width: )" srcset="">
-            <img src="" alt="">
+            <source media="(max-width: 750px)" srcset="images/cusco-street-hero-small.webp">
+            <img src="images/cuzco-city.webp" alt="Cuzco street near to Machu Picchu" width="800"
+                height="400">
         </picture>
-        <aside>
+        <section class="data ">
             <h2>Data</h2>
-            <ul>
-                <li>Label: Value</li>
-                <li>Label: Value</li>
-                <li>Label: Value</li>
-                <li>Label: Value</li>
-                <li>Label: Value</li>
-                <li>Label: Value</li>
-            </ul>
-        </aside>
-        <aside>
+            <span>Area</span>
+            <span></span>
+            <span>Population</span>
+            <span></span>
+            <span>Capital</span>
+            <span></span>
+            <span>Languages</span>
+            <span></span>
+            <span>Currency</span>
+            <span></span>
+            <span>Time Zone</span>
+            <span></span>
+            <span>Calling Code</span>
+            <span></span>
+            <span>Internet TLD:</span>
+            <span></span>
+        </section>
+        <section class="weather">
             <h2>Weather</h2>
-            <ul>
-                <li>Label: Value</li>
-                <li>Label: Value</li>
-                <li>Label: Value</li>
-                <li>Label: Value</li>
-            </ul>
-        </aside>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </section>
     </main>
     <footer>
         <p>©️<span id="currentyear"></span> 🐥 Alejandro Esteves 🐥 Lima, Peru</p>
         <p class="lastModified" id="lastModified">lastModified</p>
     </footer>
 </body>
+
 </html>
