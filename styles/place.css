@@ -1,15 +1,16 @@
 /* Computer viewport */
 
-:root{
+:root {
     /* Css variables */
     --main-color: #C8102E;
     --contrast-color: #ffffff;
-    --header-size-1:36px;
-    --header-size-1: 30px;
-    --paragraph-size: 16px;
+    --header-size-1: 40px;
+    --header-size-2: 30px;
+    --paragraph-size: 13px;
+    --header-background-color: rgba(0, 123, 86, 1);
 }
 
-*{
+* {
     /* Universal font-family, padding and margin */
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     margin: 0;
@@ -17,30 +18,109 @@
     box-sizing: border-box;
 }
 
-header{
-    border: 1px solid black;
+body {
     background-color: var(--main-color);
 }
-main{
-    border: 1px solid black;
-    background-color: yellow;
+
+header {
+    background-color: var(--main-color);
+}
+
+h1 {
+    color: #ffffff;
+    margin: 1rem auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--header-size-1);
+}
+
+.contrast {
+    background-color: var(--contrast-color);
+    height: 1em;
+}
+
+main {
+    background-color: var(--main-color);
     position: relative;
 }
 
-picture img {
+picture .hero {
     width: 100%;
-    height: auto; 
+    height: 100%;
 }
 
-section{
-    position: relative;
-    background-color: rgba(0, 0, 0, .5);
+section div {
+    grid-column: 1/3;
+    background-color: var(--header-background-color);
+    position: absolute;
+    width: 15rem;
+    height: 3.7rem;
+    top: .5rem;
+}
+
+.data div {
+    right: 5rem;
+}
+
+.weather div {
+    right: .7rem;
+}
+
+h2 {
+    color: #ffffff;
+    margin: 1rem;
+}
+
+section {
+    position: absolute;
+    background-color: rgba(255, 255, 255, .8);
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+    padding: 6em 1em 1em 1em;
+}
+
+.data {
+    top: 1rem;
+    left: .7rem;
+    grid-template-rows: 1fr repeat(1rem, 8);
+}
+
+
+.weather {
+    bottom: 1rem;
+    right: .7rem;
+    grid-template-rows: 1fr repeat(1rem, 4);
+}
+
+.weather h2::after {
+    content: "🌥️";
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+}
+
+.label {
+    text-align: end;
+    font-weight: bold;
+    font-size: var(--paragraph-size);
+}
+
+
+/* SVG */
+.cls-1{fill:#f8b62d;}.cls-1,.cls-2{stroke:#231815;stroke-miterlimit:10;}.cls-2,.cls-4{fill:#231815;}.cls-3{fill:#fff;}
+/* SVG */
+
+#weather-svg-icon{
+    display: none;
 }
 
 footer {
     position: relative;
-    background-color: #174e70;
+    background-color: var(--main-color);
     color: white;
     padding: 10px;
     text-align: center;
 }
+
