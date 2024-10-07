@@ -84,14 +84,14 @@ section {
 .data {
     top: 1rem;
     left: .7rem;
-    grid-template-rows: 1fr repeat(1rem, 8);
+    grid-template-rows: 1fr repeat(8, 1em);
 }
 
 
 .weather {
     bottom: 1rem;
     right: .7rem;
-    grid-template-rows: 1fr repeat(1rem, 4);
+    grid-template-rows: 1fr repeat(4, 1em);
 }
 
 .weather h2::after {
