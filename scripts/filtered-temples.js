@@ -154,8 +154,6 @@ function createTempleCard(filteredTemples) {
         image.setAttribute('src', temple.imageUrl);
         image.setAttribute('alt', `${temple.templeName} Temple`);
         image.setAttribute('loading', "lazy");
-        image.setAttribute('width', "278");
-        image.setAttribute('height', "174");
 
         //Finally it appends the html elements
         card.appendChild(templeName)
