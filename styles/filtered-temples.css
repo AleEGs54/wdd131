@@ -1,0 +1,45 @@
+/* For mobile */
+/* nav flex direction column */
+@media screen and (max-width: 46em){
+    a {
+        display: none;
+    }
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra el contenido dentro del header */
+    }
+
+    /* menu button */
+
+    /* Let the menu button to appear */
+    #menu{
+        display: block;
+    }
+    /* Open */
+    #menu.open::before{
+        content: 'X';
+    }
+    /* To dissapear the h1 */
+    h1.open {
+        display: none;
+    }
+
+
+    nav.open {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Only shows the links if nav if open */
+    nav.open a {
+        display: block;
+    }
+
+}
+
