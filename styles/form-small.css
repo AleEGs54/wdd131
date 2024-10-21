@@ -1,0 +1,122 @@
+:root{
+    --main-color1: #174e70;
+    --main-color2: #174e706c;
+    --text-font-weight: 600;
+    --common-max-width: 500px;
+}
+
+body{
+    font-family: "Montserrat";
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+}
+
+header{
+    background-color: var(--main-color1);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-weight: var(--text-font-weight);
+    padding: 1em;
+}
+
+form{
+    margin: 1rem 0;
+    background-color: var(--main-color2);
+}
+
+fieldset{
+    border: none;
+    margin: .5rem 0;
+}
+
+select,input[type="date"]{
+    display: block;
+    width: 100%;
+    height: 2.3em;
+    max-width: 300px;
+    font-family: "Montserrat";
+    font-weight: var(--text-font-weight);
+}
+
+input[type="radio"]{
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+
+.stars-rating label{
+    display: inline-block;
+    text-align: center;
+    margin: 0 1em;
+    width: 100%;
+    margin-top: 0;
+}
+
+.rating-container{
+    display: flex;
+    justify-content: center;
+    max-width: var(--common-max-width);
+}
+
+.features label{
+    display: block;
+}
+
+.features input[type="checkbox"]{
+    margin-right: .5rem;
+}
+
+.w-review textarea, .user-name input[type="text"]{
+    display: block;
+    width: 100%;
+    max-width: var(--common-max-width);
+}
+
+.user-name input[type="text"]{
+    height: 1.5rem;
+}
+
+.w-review textarea{
+    height: 5rem;
+}
+
+.optional{
+    font-size: smaller;
+}
+
+
+input[type="submit"]{
+    width: 96%;
+    padding: .8rem;
+    margin: 0 auto;
+    max-width: var(--common-max-width);
+    margin: 0 1.5% .5rem 2.5%;
+
+}
+
+@media (min-width: 700px) {
+    input[type="submit"]{
+        width: 96%;
+        padding: .8rem;
+        margin: 0 auto;
+        max-width: var(--common-max-width);
+        margin: 0 3% .5rem 1%;
+    }
+    
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    background-color: var(--main-color1);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

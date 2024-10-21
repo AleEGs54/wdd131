@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="This page shows a form so the user sends a review of a product">
+    <meta name="author" content="Alejandro Esteves">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/form-small.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <fieldset>
+                <label class="title">Product Name 
+                    <select name="product-name" id="product-name" required>
+                        <option value="" disabled selected>Select a Product...</option>
+                    </select>
+                </label>
+            </fieldset>
+
+
+            <fieldset class="stars-rating">
+                <legend class="title">Overall Rating</legend>
+                <div class="rating-container">
+                    <label>&#9734<input type="radio" id="rating" name="rating" value="1"></label>
+                    <label>&#9734&#9734<input type="radio" id="rating" name="rating" value="2"></label>
+                    <label>&#9734&#9734&#9734<input type="radio" id="rating" name="rating" value="3"></label>
+                    <label>&#9734&#9734&#9734&#9734<input type="radio" id="rating" name="rating" value="4"></label>
+                    <label>&#9734&#9734&#9734&#9734&#9734<input type="radio" id="rating" name="rating" value="5"></label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label>Date of Installation <input type="date" id="date-field" name="date" required></label>
+            </fieldset>
+
+            <fieldset class="features">
+                <legend class="title">Which features did yu find useful in the product? <em>(Check all that apply)</em></legend>
+
+                <label><input type="checkbox" id="features" name="features" value="yes">Durability</label>
+                <label><input type="checkbox" id="features" name="features" value="yes">Ease of Use</label>
+                <label><input type="checkbox" id="features" name="features" value="yes">Performance</label>
+                <label><input type="checkbox" id="features" name="features" value="yes">Design</label>
+            </fieldset>
+
+            <fieldset class="w-review">
+                <label class="title">Written Review <span class="optional">(Optional)</span><textarea name="written-review" id="written-review"></textarea></label>
+            </fieldset>
+
+            <fieldset class="user-name">
+                <label class="title">Your Name <span class="optional">(Optional)</span> <input type="text" id="user-name" name="name"></label>
+            </fieldset>
+
+            <input type="submit" value="Post Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-wrap">
+            <p>©️<span id="currentyear"></span> 🐥 Alejandro Esteves 🐥 Lima, Peru</p>
+            <p class="lastModified" id="lastModified">lastModified</p>
+        </div>
+    </footer>
+</body>
+
+</html>
