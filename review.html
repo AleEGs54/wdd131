@@ -58,9 +58,14 @@
         currentyear.innerHTML = `${today.getFullYear()}`;
         lastModified.innerHTML = `Last Modification: ${document.lastModified}`;
 
-        let reviewsCompleted = 0;
-
-        reviewsCompleted ++;
+        if (typeof reviewsCompleted !== "undefined") 
+        {
+            reviewsCompleted ++
+        } 
+        else 
+        {
+                let reviewsCompleted = 0;
+        }
 
         localStorage.setItem("reviewsCompleted", reviewsCompleted);
     </script>
