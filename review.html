@@ -61,4 +61,10 @@
         // writing the date
         currentyear.innerHTML = `${today.getFullYear()}`;
         lastModified.innerHTML = `Last Modification: ${document.lastModified}`;
+
+        let reviewsCompleted = 0;
+
+        reviewsCompleted ++;
+
+        localStorage.setItem("reviewsCompleted", reviewsCompleted);
     </script>

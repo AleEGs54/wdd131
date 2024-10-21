@@ -38,11 +38,6 @@ products.forEach(product => {
     select.appendChild(option);
 });
 
-let reviewsCompleted = 0;
-
-reviewsCompleted ++;
-
-localStorage.setItem("reviewsCompleted", reviewsCompleted);
 
 // Select the DOM elements for output
 const currentyear = document.querySelector("#currentyear");
