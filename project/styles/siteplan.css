@@ -16,7 +16,9 @@ text-align: center;
 }
 
 .accent{
-    color: rgb(255, 145, 0);
+    color: #ff9500;
+    background-color: #00005b;
+    font-weight: 400;
 }
 
 article div{
@@ -35,7 +37,7 @@ article div{
 }
 
 .blue{
-    background-color: rgb(31, 33, 245);
+    background-color: #00005b;
 }
 
 .orange{
