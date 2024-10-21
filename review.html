@@ -29,21 +29,26 @@
             justify-content: center;
             align-items: center;
         }
-    </style>
 
+        #reviews-counter {
+            font-weight: bold;
+            color: #174e70;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>You post has been successfully posted!</h1>
+        <h1>Your post has been successfully posted!</h1>
     </header>
     <main>
-        <p>Thanks for making our products more accurate</p>
+        <p>Thanks for making our products more accurate!</p>
+        <p>You have completed <span id="reviews-counter"></span> reviews.</p>
     </main>
     <footer>
         <div class="footer-wrap">
             <p>©️<span id="currentyear"></span> 🐥 Alejandro Esteves 🐥 Lima, Peru</p>
-            <p class="lastModified" id="lastModified">lastModified</p>
+            <p class="lastModified" id="lastModified">Last Modification: ${document.lastModified}</p>
         </div>
     </footer>
     <script>
@@ -58,16 +63,22 @@
         currentyear.innerHTML = `${today.getFullYear()}`;
         lastModified.innerHTML = `Last Modification: ${document.lastModified}`;
 
-        if (typeof reviewsCompleted !== "undefined") 
-        {
-            reviewsCompleted ++
-        } 
-        else 
-        {
-                let reviewsCompleted = 0;
+        // Handling review counter with localStorage
+        let reviewsCompleted = localStorage.getItem("reviewsCompleted");
+
+        // If no value is stored, initialize the counter
+        if (!reviewsCompleted) {
+            reviewsCompleted = 0;
         }
 
+        // Increment the counter by 1
+        reviewsCompleted++;
+
+        // Update localStorage with the new value
         localStorage.setItem("reviewsCompleted", reviewsCompleted);
+
+        // Display the counter on the page
+        document.getElementById("reviews-counter").innerText = reviewsCompleted;
     </script>
 </body>
 
