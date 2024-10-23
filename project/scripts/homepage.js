@@ -7,7 +7,8 @@ const reviews = [
       title: "A Masterpiece of Open-World Freedom",
       review: "This game redefines what an open-world game should be. The freedom it gives to explore, solve puzzles, and experiment is simply incredible. The combat and physics mechanics make every encounter unique. Despite some repetitive enemies, it’s still a masterpiece.",
       rating: 5,
-      date: "October 15, 2024"
+      date: "October 15, 2024",
+      image: "https://zelda.nintendo.com/breath-of-the-wild/assets/media/wallpapers/desktop-1.jpg"
     },
     {
       user: "PixelKnight89",
@@ -15,7 +16,8 @@ const reviews = [
       title: "Immersive but Sometimes Slow",
       review: "A masterpiece in terms of narrative and detail. The landscapes, characters, and story fully immerse you in the Old West. However, the slow pace in some missions and clunky controls can be frustrating, which affects the overall experience.",
       rating: 4,
-      date: "September 10, 2024"
+      date: "September 10, 2024",
+      image: "https://images8.alphacoders.com/958/thumb-1920-958091.jpg"
     },
     {
       user: "EpicGamer123",
@@ -23,7 +25,8 @@ const reviews = [
       title: "Evolving but Heavily Reliant on Microtransactions",
       review: "The constant evolution of this game is impressive. New weapons, events, and game modes keep it fresh. However, the reliance on microtransactions and the high level of competition can make it frustrating if you’re not willing to spend money or invest a lot of time.",
       rating: 3,
-      date: "August 2, 2024"
+      date: "August 2, 2024",
+      image:"https://i.pinimg.com/1200x/fc/f4/17/fcf41753db9f399addec1fcfaed2b968.jpg"
     },
     {
       user: "ArcadeLover77",
@@ -31,7 +34,8 @@ const reviews = [
       title: "A Roguelike with Unmatched Depth",
       review: "This roguelike has one of the best narratives integrated into gameplay that I’ve ever seen. Each death makes you stronger, and the interactions with gods and characters are captivating. The art style and music are sublime. It’s challenging, but each time you lose, you learn something new.",
       rating: 5,
-      date: "June 28, 2024"
+      date: "June 28, 2024",
+      image:"https://images2.alphacoders.com/115/thumb-1920-1151800.png"
     },
     {
       user: "SilentHunter94",
@@ -39,7 +43,8 @@ const reviews = [
       title: "Emotional but Flawed",
       review: "The story is impactful and polarizing. While the narrative is strong, the amount of brutal scenes can feel excessive. Sometimes, the characters make illogical decisions, which affects immersion. Overall, it has highs and lows.",
       rating: 3,
-      date: "September 9, 2024"
+      date: "September 9, 2024",
+      image:"https://images7.alphacoders.com/124/thumb-1920-1244875.jpg"
     },
     {
       user: "CyberNinja5000",
@@ -47,7 +52,8 @@ const reviews = [
       title: "Still Buggy Despite Patches",
       review: "Despite the patches, it’s still a game plagued by bugs. The city is vibrant, and the main story is interesting, but the amount of repetitive side quests and constant technical issues ruin the experience. It doesn’t fully live up to the initial expectations.",
       rating: 2,
-      date: "October 20, 2024"
+      date: "October 20, 2024",
+      image:"https://images2.alphacoders.com/131/thumb-1920-1317789.jpeg"
     },
     {
       user: "RetroWave2012",
@@ -55,7 +61,8 @@ const reviews = [
       title: "A Beautiful and Challenging Platformer",
       review: "A difficult but fair platformer with a surprisingly deep narrative. The soundtrack is beautiful, and the gameplay is flawless. Every level feels precisely designed, and though it can be frustrating, it never feels unfair. A true achievement in the platforming genre.",
       rating: 5,
-      date: "July 5, 2024"
+      date: "July 5, 2024",
+      image:"https://images7.alphacoders.com/901/thumb-1920-901149.png"
     },
     {
       user: "VRWarrior101",
@@ -63,7 +70,8 @@ const reviews = [
       title: "A Groundbreaking VR Experience",
       review: "The best virtual reality game so far. The immersion is total, and the use of VR in solving puzzles and combat is brilliant. However, the story is shorter than expected, and the content may not justify the full price of the game.",
       rating: 4,
-      date: "October 12, 2024"
+      date: "October 12, 2024",
+      image:"https://preview.redd.it/0nkgyikp35041.png?width=900&format=png&auto=webp&s=7325d8b34de2e8f13d2c7fbc144d5edcd8e970dd"
     },
     {
       user: "SpaceExplorer99",
@@ -71,7 +79,8 @@ const reviews = [
       title: "Redemption but Still Repetitive",
       review: "Although it has improved over time, it still has many problems. Exploring planets quickly becomes repetitive, and the lack of a strong narrative makes it lose interest. It’s fun at times, but not enough to keep you hooked for long.",
       rating: 2,
-      date: "September 30, 2024"
+      date: "September 30, 2024",
+      image:"https://images.alphacoders.com/725/thumb-1920-725605.png"
     }
   ];
   
@@ -94,11 +103,13 @@ const reviews = [
 
     // creating the elements
     let card = document.createElement("section")
+    let shade = document.createElement("div")
     let userAndGame = document.createElement("p");
     let title = document.createElement("h3");
     let reviewContent = document.createElement("p");
     let rating = document.createElement("p");
     let date = document.createElement("p");
+    // let image = document.createElement("img")
 
     
     // assigning data to the elements
@@ -111,23 +122,30 @@ const reviews = [
     // assigning the attributes
 
     card.setAttribute("class", "card");
+    shade.setAttribute("class", "shade")
     title.setAttribute("class","title");
     reviewContent.setAttribute("class","review");
     rating.setAttribute("class","rating");
     date.setAttribute("class","date");
 
+    //Appending items inside the shade to highlight them
+    shade.appendChild(userAndGame);
+
     //appending the elements to its card
-    card.appendChild(userAndGame);
+    card.appendChild(shade);
     card.appendChild(title);
     card.appendChild(rating);
     card.appendChild(reviewContent);
     card.appendChild(date);
 
+
+    //Here goes the image of each review in this main page which is going to be in the background
+    card.style.backgroundImage =`linear-gradient(to bottom,transparent, black, black), url(${review.image})`;
+    card.style.backgroundSize = "cover";
+    card.style.backgroundPosition = "center";
+
     //Nestign it all to .posts
     posts.appendChild(card);
-    
-
-    // Estoy asignando datos a los elementos, pero te falta saber como se veran en la pantalla, quizas hacer unos cards manualmente en html y estilizarlo en css no estaría mal
   })
   
   
