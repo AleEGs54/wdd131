@@ -1,4 +1,4 @@
-//Main page reviews are examples of waht the use can find in this page: diversity of opinions
+//Main page reviews are examples of what the use can find in this page: diversity of opinions
 
 const reviews = [
     {
