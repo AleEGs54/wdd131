@@ -26,7 +26,7 @@ const reviews = [
       review: "The constant evolution of this game is impressive. New weapons, events, and game modes keep it fresh. However, the reliance on microtransactions and the high level of competition can make it frustrating if you’re not willing to spend money or invest a lot of time.",
       rating: 3,
       date: "August 2, 2024",
-      image:"https://i.pinimg.com/1200x/fc/f4/17/fcf41753db9f399addec1fcfaed2b968.jpg"
+      image:"images/fortnite.webp"
     },
     {
       user: "ArcadeLover77",
@@ -35,7 +35,7 @@ const reviews = [
       review: "This roguelike has one of the best narratives integrated into gameplay that I’ve ever seen. Each death makes you stronger, and the interactions with gods and characters are captivating. The art style and music are sublime. It’s challenging, but each time you lose, you learn something new.",
       rating: 5,
       date: "June 28, 2024",
-      image:"https://images2.alphacoders.com/115/thumb-1920-1151800.png"
+      image:"images/hades.webp"
     },
     {
       user: "SilentHunter94",
@@ -44,7 +44,7 @@ const reviews = [
       review: "The story is impactful and polarizing. While the narrative is strong, the amount of brutal scenes can feel excessive. Sometimes, the characters make illogical decisions, which affects immersion. Overall, it has highs and lows.",
       rating: 3,
       date: "September 9, 2024",
-      image:"https://images7.alphacoders.com/124/thumb-1920-1244875.jpg"
+      image:"images/tlou2.webp"
     },
     {
       user: "CyberNinja5000",
@@ -53,7 +53,7 @@ const reviews = [
       review: "Despite the patches, it’s still a game plagued by bugs. The city is vibrant, and the main story is interesting, but the amount of repetitive side quests and constant technical issues ruin the experience. It doesn’t fully live up to the initial expectations.",
       rating: 2,
       date: "October 20, 2024",
-      image:"https://images2.alphacoders.com/131/thumb-1920-1317789.jpeg"
+      image:"images/cyberpunk.webp"
     },
     {
       user: "RetroWave2012",
@@ -62,7 +62,7 @@ const reviews = [
       review: "A difficult but fair platformer with a surprisingly deep narrative. The soundtrack is beautiful, and the gameplay is flawless. Every level feels precisely designed, and though it can be frustrating, it never feels unfair. A true achievement in the platforming genre.",
       rating: 5,
       date: "July 5, 2024",
-      image:"https://images7.alphacoders.com/901/thumb-1920-901149.png"
+      image:"images/celeste.webp"
     },
     {
       user: "VRWarrior101",
@@ -71,7 +71,7 @@ const reviews = [
       review: "The best virtual reality game so far. The immersion is total, and the use of VR in solving puzzles and combat is brilliant. However, the story is shorter than expected, and the content may not justify the full price of the game.",
       rating: 4,
       date: "October 12, 2024",
-      image:"https://preview.redd.it/0nkgyikp35041.png?width=900&format=png&auto=webp&s=7325d8b34de2e8f13d2c7fbc144d5edcd8e970dd"
+      image:"images/hla.webp"
     },
     {
       user: "SpaceExplorer99",
@@ -80,7 +80,7 @@ const reviews = [
       review: "Although it has improved over time, it still has many problems. Exploring planets quickly becomes repetitive, and the lack of a strong narrative makes it lose interest. It’s fun at times, but not enough to keep you hooked for long.",
       rating: 2,
       date: "September 30, 2024",
-      image:"https://images.alphacoders.com/725/thumb-1920-725605.png"
+      image:"images/nms.webp"
     }
   ];
   
