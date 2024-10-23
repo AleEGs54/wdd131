@@ -1,0 +1,97 @@
+* {
+    --normal-font: "Roboto";
+    --review-font: "Roboto"
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--normal-font);
+}
+
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin: 1em;
+}
+
+.card {
+    border-radius: .8em;
+    background-color: #174e70;
+    color: white;
+    padding: 1em;
+
+}
+
+.username {
+    font-weight: 300;
+}
+
+.game-name {
+    font-weight: 800;
+}
+
+
+
+.title {
+    /* empty */
+    font-weight: 400;
+    margin: 0 0 5px 0;
+}
+
+.date {
+    text-align: end;
+    margin: 0;
+    font-weight: 300;
+}
+
+.username,
+.game-name,
+.about {
+    display: inline-block;
+}
+
+
+.rating {
+    margin: 0;
+}
+
+.review {
+    font-family: var(--review-font);
+    font-size: 14px;
+}
+
+/* Media queries */
+
+
+/* For medium size screens */
+@media screen and (max-width: 65em) {
+
+    .posts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* For smaller screens */
+@media screen and (max-width: 46em) {
+
+    .posts {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+/*FOOTER*/
+footer {
+    background-color: #174e70;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
