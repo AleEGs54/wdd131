@@ -8,7 +8,7 @@ const reviews = [
       review: "This game redefines what an open-world game should be. The freedom it gives to explore, solve puzzles, and experiment is simply incredible. The combat and physics mechanics make every encounter unique. Despite some repetitive enemies, it’s still a masterpiece.",
       rating: 5,
       date: "October 15, 2024",
-      image: "https://zelda.nintendo.com/breath-of-the-wild/assets/media/wallpapers/desktop-1.jpg"
+      image: "images/zelda.webp"
     },
     {
       user: "PixelKnight89",
@@ -17,7 +17,7 @@ const reviews = [
       review: "A masterpiece in terms of narrative and detail. The landscapes, characters, and story fully immerse you in the Old West. However, the slow pace in some missions and clunky controls can be frustrating, which affects the overall experience.",
       rating: 4,
       date: "September 10, 2024",
-      image: "https://images8.alphacoders.com/958/thumb-1920-958091.jpg"
+      image: "images/rdr2.webp"
     },
     {
       user: "EpicGamer123",
