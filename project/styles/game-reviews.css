@@ -2,7 +2,7 @@
     --normal-font: "Roboto";
     --review-font: "Roboto";
     --primary-color: #174e70;
-    --grey-color: rgb(111, 111, 111);
+    --grey-color: rgb(225, 225, 225);
 }
 
 body {
@@ -101,10 +101,133 @@ nav a:nth-child(2) {
     display: none;
 }
 
+/* main */
+main{
+    margin: 2px 0;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1em;
+}
+
+.filter-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid green;
+}
+
+.page-info{
+    max-width: 700px;
+    font-size: 15px;
+    text-align: center;
+    margin-right: 2em;
+}
+
+.dropContainer{
+    margin: 1em 2em;
+    text-align: center;
+}
+
+.dropContainer p{
+    background-color: var(--grey-color);
+}
+
+#game-selector{
+    /* This is the dropdown element */
+    max-width: 300px;
+    width: 50%;
+    border: none;
+    border-radius: .5rem;
+    padding: 5px;
+    height: 2rem;
+    background-color: var(--grey-color);
+    color: black;
+}
+
+/* Posts */
+.posts{
+    border: 5px solid blueviolet;
+}
+
+.review-info {
+    /* For the reviews text */
+    position: relative;
+    z-index: 10;
+    /* background: linear-gradient(to bottom, transparent, black, black); */
+    padding: 1em;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    margin: 1em;
+}
+
+.card {
+    /* For the image */
+    position: relative;
+    border-radius: .8em;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1em;
+    overflow: hidden;
+
+}
+
+
+.username {
+    font-weight: 300;
+    color: rgb(242, 169, 59);
+}
+
+.game-name {
+    font-weight: 800;
+}
+
+
+
+.title {
+    /* empty */
+    font-weight: 400;
+    margin: 0 0 5px 0;
+}
+
+.date {
+    text-align: end;
+    margin: 0;
+    font-weight: 300;
+}
+
+.username,
+.game-name,
+.about {
+    display: inline-block;
+}
+
+
+.rating {
+    margin: 0;
+}
+
+.review {
+    font-family: var(--review-font);
+    font-size: 14px;
+}
+
+.shade {
+    /* border: 1px solid black; */
+    padding: .1em;
+    width: 100%;
+    border-radius: .8rem;
+    background-color: rgba(50, 50, 50, .6);
+}
+
 
 /*FOOTER*/
 footer {
-    margin-top: 2px;
     background-color: var(--primary-color);
     color: white;
     padding: 10px;
