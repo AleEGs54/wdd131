@@ -1,7 +1,8 @@
 * {
     --normal-font: "Roboto";
     --review-font: "Roboto";
-    --red-color: #E4000f;
+    --secondary-color: #174e70;
+    --grey-color: grey;
 }
 
 body {
@@ -46,7 +47,7 @@ h1{
     color: white;
     width: 100%;
     text-align: center;
-    background-color: rgba(247, 6, 6, 0.71); /*This is transparent and doesn't use the red-color variable*/
+    background-color: rgba(128, 128, 128, 0.646); /*This is transparent and doesn't use the grey-color variable*/
     z-index: 1;
 
 }
@@ -64,8 +65,13 @@ nav{
     /* flex-wrap: wrap; */
     justify-content: space-evenly ;
     align-items: center;
-    background-color: var(--red-color);
+    background-color: var(--grey-color);
     /* background: linear-gradient(rgba(52, 152, 219, 0.5), rgba(46, 204, 113, 0.5)); */
+}
+
+nav a:nth-child(2){
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 
 #menu::before{
@@ -105,7 +111,7 @@ nav a:hover{
 
     font-weight: 700;
     background-color: white;
-    color: var(--red-color);
+    color: var(--secondary-color);
 }
 
 #big-message{
@@ -118,7 +124,9 @@ nav a:hover{
     /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--red-color), var(--red-color), var(--red-color));
+    /* background-color: var(--secondary-color); */
+    /* background: linear-gradient(to bottom, var(--secondary-color), grey); */
+    background: linear-gradient(to bottom, grey, var(--secondary-color));
     min-height: 3em;
     padding: 1em;
 }
@@ -127,12 +135,13 @@ nav a:hover{
     text-decoration: none;
     color: white;
     padding: 5px;
+    font-weight: 400;
 }
 
 #big-message a:hover{
-    background-color: white;
+    /* background-color: white; */
     border-radius: .8rem;
-    color: var(--red-color);
+    font-weight: 600;
 }
 
 /* Posts css */
@@ -147,7 +156,7 @@ nav a:hover{
 
 .card {
     border-radius: .8em;
-    background-color: #174e70;
+    background-color: var(--secondary-color);
     color: white;
     padding: 1em;
 
@@ -210,13 +219,20 @@ nav a:hover{
     margin-top: 1em;
     width: auto;
     height: auto;
-    background-color: var(--red-color);
+    background-color: grey;
+   
     overflow:hidden;
 
     /* typography */
     color: white;
-    /* color: var(--red-color); */
+    /* color: var(--secondary-color); */
     text-align: center;
+}
+
+.critics p{
+    background: linear-gradient(to bottom, var(--secondary-color), grey);
+    margin: 0;
+    line-height: 300%;
 }
 
 .underline{
@@ -225,16 +241,16 @@ nav a:hover{
 }
 
 .journals{
-    color: var(--red-color);
+    color: var(--secondary-color);
     display: flex;
     gap: 5px;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--red-color); */
+    /* background-color: var(--secondary-color); */
     background-color: white;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    border-bottom: 1em solid grey;
     padding: 2em 0;
+
 }
 
 .journal-review strong{
@@ -242,8 +258,8 @@ nav a:hover{
 }
 
 .ginsider{
-    border-right:  1px solid var(--red-color);
-    border-left:  1px solid var(--red-color);
+    border-right:  1px solid var(--secondary-color);
+    border-left:  1px solid var(--secondary-color);
 }
 
 /* Media queries */
@@ -318,6 +334,10 @@ nav a:hover{
         grid-template-rows: repeat(3, 10.6em);
     }
 
+    nav a:nth-child(2){
+        border: none;
+    }
+
     /* Posts */
     .posts {
         display: flex;
@@ -334,7 +354,7 @@ nav a:hover{
 
 /*FOOTER*/
 footer {
-    background-color: var(--red-color);
+    background-color: var(--grey-color);
     color: white;
     padding: 10px;
     text-align: center;
