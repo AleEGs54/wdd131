@@ -1,7 +1,7 @@
 * {
     --normal-font: "Roboto";
     --review-font: "Roboto";
-    --secondary-color: #174e70;
+    --primary-color: #174e70;
     --grey-color: rgb(111, 111, 111);
 }
 
@@ -68,7 +68,7 @@ nav {
     /* flex-wrap: wrap; */
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     /* background: linear-gradient(rgba(52, 152, 219, 0.5), rgba(46, 204, 113, 0.5)); */
 }
 
@@ -114,7 +114,7 @@ nav a:hover {
 
     font-weight: 700;
     background-color: white;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 #big-message {
@@ -127,9 +127,9 @@ nav a:hover {
     /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    /* background-color: var(--secondary-color); */
-    background: linear-gradient(to bottom, var(--secondary-color), var(--grey-color));
-    /* background: linear-gradient(to bottom, var(--grey-color), var(--secondary-color)); */
+    /* background-color: var(--primary-color); */
+    background: linear-gradient(to bottom, var(--primary-color), var(--grey-color));
+    /* background: linear-gradient(to bottom, var(--grey-color), var(--primary-color)); */
     min-height: 3em;
     padding: 1em;
 }
@@ -195,7 +195,7 @@ nav a:hover {
     /* For the image */
     position: relative;
     border-radius: .8em;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: white;
     padding: 1em;
     overflow: hidden;
@@ -265,13 +265,13 @@ nav a:hover {
 
     /* typography */
     color: white;
-    /* color: var(--secondary-color); */
+    /* color: var(--primary-color); */
     text-align: center;
 }
 
 .critics p {
-    /* background: linear-gradient(to bottom, var(--secondary-color), var(--grey-color)); */
-    background: linear-gradient(to bottom, var(--grey-color), var(--secondary-color));
+    /* background: linear-gradient(to bottom, var(--primary-color), var(--grey-color)); */
+    background: linear-gradient(to bottom, var(--grey-color), var(--primary-color));
     margin: 0;
     line-height: 300%;
 }
@@ -282,14 +282,14 @@ nav a:hover {
 }
 
 .journals {
-    color: var(--secondary-color);
+    color: var(--primary-color);
     display: flex;
     gap: 5px;
     justify-content: center;
     align-items: center;
-    /* background-color: var(--secondary-color); */
+    /* background-color: var(--primary-color); */
     background-color: white;
-    border-bottom: 1em solid var(--secondary-color);
+    border-bottom: 1em solid var(--primary-color);
     padding: 2em 0;
 
 }
@@ -299,15 +299,15 @@ nav a:hover {
 }
 
 .ginsider {
-    border-right: 1px solid var(--secondary-color);
-    border-left: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--primary-color);
+    border-left: 1px solid var(--primary-color);
 }
 
 
 /*FOOTER*/
 footer {
     margin-top: 2px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: white;
     padding: 10px;
     text-align: center;
