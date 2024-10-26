@@ -1,7 +1,93 @@
+* {
+    --normal-font: "Roboto";
+    --review-font: "Roboto";
+    --primary-color: #174e70;
+    --grey-color: rgb(111, 111, 111);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--normal-font);
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3em;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.h1-container {
+    position: relative;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+}
+
+.h1-container img {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    position: absolute;
+    top: 25%;
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: #174e70a9;
+    /*This is transparent and doesn't use the grey-color variable*/
+    z-index: 1;
+
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary-color);
+
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a:hover {
+    
+    font-weight: 700;
+    background-color: white;
+    color: var(--primary-color);
+}
+
+nav a:nth-child(2) {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
 /*FOOTER*/
 footer {
     margin-top: 2px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: white;
     padding: 10px;
     text-align: center;
