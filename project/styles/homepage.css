@@ -1,6 +1,6 @@
 * {
-    --normal-font: "Roboto";
-    --review-font: "Roboto";
+    --normal-font: 'Open Sans', sans-serif;
+    --review-font: 'Open Sans', sans-serif;
     --secondary-color: #174e70;
     --grey-color: rgb(111, 111, 111);
 }
