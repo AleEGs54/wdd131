@@ -116,14 +116,16 @@ reviews.forEach(review => {
   const posts = document.querySelector(".posts");
 
   // creating the elements
-  let card = document.createElement("section")
-  let shade = document.createElement("div")
+  let reviewInfo = document.createElement("div");
+  let card = document.createElement("section");
+  let shade = document.createElement("div");
   let userAndGame = document.createElement("p");
   let title = document.createElement("h3");
   let reviewContent = document.createElement("p");
   let rating = document.createElement("p");
   let date = document.createElement("p");
-  // let image = document.createElement("img")
+  let imgContainer = document.createElement("div");
+  let image = document.createElement("img")
 
 
   // assigning data to the elements
@@ -133,30 +135,45 @@ reviews.forEach(review => {
   rating.textContent = setRatingStars(review.rating);
   date.textContent = review.date;
 
-  // assigning the attributes
 
-  card.setAttribute("class", "card");
+  // assigning the attributes
+  reviewInfo.setAttribute("class", "review-info"); //This div will be the holder for the entire information
+  card.setAttribute("class", "card"); //THe card will be the background for the image
   shade.setAttribute("class", "shade")
   title.setAttribute("class", "title");
   reviewContent.setAttribute("class", "review");
   rating.setAttribute("class", "rating");
   date.setAttribute("class", "date");
 
+  //Acquires the url, the alt and lazyload
+  image.setAttribute("src", `${review.image}`);
+  image.setAttribute("alt", "videogame image");
+  image.setAttribute("loading", "lazy")
+  image.setAttribute("width", "100");
+  image.setAttribute("height", "150");
+  imgContainer.setAttribute("class", "bg-image");
+
   //Appending items inside the shade to highlight them
   shade.appendChild(userAndGame);
 
   //appending the elements to its card
-  card.appendChild(shade);
-  card.appendChild(title);
-  card.appendChild(rating);
-  card.appendChild(reviewContent);
-  card.appendChild(date);
+  imgContainer.appendChild(image);
+  card.appendChild(imgContainer);
+
+  reviewInfo.appendChild(shade);
+  reviewInfo.appendChild(title);
+  reviewInfo.appendChild(rating);
+  reviewInfo.appendChild(reviewContent);
+  reviewInfo.appendChild(date);
+
+  card.appendChild(reviewInfo);
 
 
   //Here goes the image of each review in this main page which is going to be in the background
-  card.style.backgroundImage = `linear-gradient(to bottom,transparent, black, black), url(${review.image})`;
-  card.style.backgroundSize = "cover";
-  card.style.backgroundPosition = "center";
+  //   card.style.backgroundImage = `linear-gradient(to bottom,transparent, black, black), url(${review.image})`;
+  //   card.style.backgroundSize = "cover";
+  //   card.style.backgroundPosition = "center";
+
 
   //Nestign it all to .posts
   posts.appendChild(card);
