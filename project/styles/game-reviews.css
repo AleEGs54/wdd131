@@ -16,9 +16,10 @@ body {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3em;
+    grid-template-rows: 15em 3em;
     justify-items: center;
     align-items: center;
+    position: relative;
 
 }
 
@@ -83,6 +84,23 @@ nav a:nth-child(2) {
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
+
+#menu::before {
+    content: "☰";
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: 0;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    top: 10.3rem;
+    right: 1.7rem;
+    display: none;
+}
+
 
 /*FOOTER*/
 footer {

@@ -1,0 +1,75 @@
+/* Media queries */
+
+
+/* For medium size screens */
+@media screen and (max-width: 65em) {
+
+    .posts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+/* For smaller screens */
+@media screen and (max-width: 46em) {
+
+    header{
+        grid-template-rows: 9.8em 3em;
+    }
+
+
+    /* Closed button */
+
+    nav a {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+
+    }
+
+    /* Open button */
+
+    #menu.open::before {
+        content: "X";
+    }
+
+
+    nav.open {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav.open a {
+        display: flex;
+        width: 80%
+    }
+
+
+    header.open {
+        grid-template-rows: repeat(2, 9.8em);
+    }
+
+    nav a:nth-child(2) {
+        border: none;
+    }
+
+    /* Posts */
+    .posts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .message a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+}

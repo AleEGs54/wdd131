@@ -16,7 +16,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 3em;
+    grid-template-rows: 15em 15em 3em;
     justify-items: center;
     align-items: center;
 
@@ -106,7 +106,7 @@ nav a:hover {
     color: white;
     position: absolute;
     text-decoration: none;
-    top: 21.5rem;
+    top: 20rem;
     right: 1.7rem;
     display: none;
 }
