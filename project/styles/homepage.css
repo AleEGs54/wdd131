@@ -47,7 +47,7 @@ h1{
     color: white;
     width: 100%;
     text-align: center;
-    background-color: #174e70; /*This is transparent and doesn't use the grey-color variable*/
+    background-color: #174e70a9; /*This is transparent and doesn't use the grey-color variable*/
     z-index: 1;
 
 }
@@ -65,7 +65,7 @@ nav{
     /* flex-wrap: wrap; */
     justify-content: space-evenly ;
     align-items: center;
-    background-color: var(--grey-color);
+    background-color: var(--secondary-color);
     /* background: linear-gradient(rgba(52, 152, 219, 0.5), rgba(46, 204, 113, 0.5)); */
 }
 
@@ -125,8 +125,8 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     /* background-color: var(--secondary-color); */
-    /* background: linear-gradient(to bottom, var(--secondary-color), grey); */
-    background: linear-gradient(to bottom, var(--grey-color), var(--secondary-color));
+    background: linear-gradient(to bottom, var(--secondary-color), var(--grey-color));
+    /* background: linear-gradient(to bottom, var(--grey-color), var(--secondary-color)); */
     min-height: 3em;
     padding: 1em;
 }
@@ -230,7 +230,8 @@ nav a:hover{
 }
 
 .critics p{
-    background: linear-gradient(to bottom, var(--secondary-color), var(--grey-color));
+    /* background: linear-gradient(to bottom, var(--secondary-color), var(--grey-color)); */
+    background: linear-gradient(to bottom, var(--grey-color), var(--secondary-color));
     margin: 0;
     line-height: 300%;
 }
@@ -248,7 +249,7 @@ nav a:hover{
     align-items: center;
     /* background-color: var(--secondary-color); */
     background-color: white;
-    border-bottom: 1em solid var(--grey-color);
+    border-bottom: 1em solid var(--secondary-color);
     padding: 2em 0;
 
 }
@@ -354,7 +355,8 @@ nav a:hover{
 
 /*FOOTER*/
 footer {
-    background-color: var(--grey-color);
+    margin-top: 1px;
+    background-color: var(--secondary-color);
     color: white;
     padding: 10px;
     text-align: center;
