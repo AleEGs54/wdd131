@@ -2,7 +2,7 @@
     --normal-font: "Roboto";
     --review-font: "Roboto";
     --secondary-color: #174e70;
-    --grey-color: rgb(114, 114, 114);
+    --grey-color: rgb(111, 111, 111);
 }
 
 body {
@@ -126,7 +126,7 @@ nav a:hover{
     justify-content: center;
     /* background-color: var(--secondary-color); */
     /* background: linear-gradient(to bottom, var(--secondary-color), grey); */
-    background: linear-gradient(to bottom, var, var(--secondary-color));
+    background: linear-gradient(to bottom, var(--grey-color), var(--secondary-color));
     min-height: 3em;
     padding: 1em;
 }
@@ -219,7 +219,7 @@ nav a:hover{
     margin-top: 1em;
     width: auto;
     height: auto;
-    background-color: grey;
+    background-color: var(--grey-color);
    
     overflow:hidden;
 
@@ -230,7 +230,7 @@ nav a:hover{
 }
 
 .critics p{
-    background: linear-gradient(to bottom, var(--secondary-color), grey);
+    background: linear-gradient(to bottom, var(--secondary-color), var(--grey-color));
     margin: 0;
     line-height: 300%;
 }
@@ -248,7 +248,7 @@ nav a:hover{
     align-items: center;
     /* background-color: var(--secondary-color); */
     background-color: white;
-    border-bottom: 1em solid grey;
+    border-bottom: 1em solid var(--grey-color);
     padding: 2em 0;
 
 }
