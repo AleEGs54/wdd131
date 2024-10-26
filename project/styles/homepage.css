@@ -2,7 +2,7 @@
     --normal-font: "Roboto";
     --review-font: "Roboto";
     --secondary-color: #174e70;
-    --grey-color: grey;
+    --grey-color: rgb(114, 114, 114);
 }
 
 body {
@@ -47,7 +47,7 @@ h1{
     color: white;
     width: 100%;
     text-align: center;
-    background-color: #174e70f1; /*This is transparent and doesn't use the grey-color variable*/
+    background-color: #174e70; /*This is transparent and doesn't use the grey-color variable*/
     z-index: 1;
 
 }
@@ -126,7 +126,7 @@ nav a:hover{
     justify-content: center;
     /* background-color: var(--secondary-color); */
     /* background: linear-gradient(to bottom, var(--secondary-color), grey); */
-    background: linear-gradient(to bottom, grey, var(--secondary-color));
+    background: linear-gradient(to bottom, var, var(--secondary-color));
     min-height: 3em;
     padding: 1em;
 }
