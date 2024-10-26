@@ -68,10 +68,20 @@ nav{
     /* background: linear-gradient(rgba(52, 152, 219, 0.5), rgba(46, 204, 113, 0.5)); */
 }
 
-.burguer-button{
+#menu::before{
+    content: "☰";
+}
+
+#menu{
+    font-size: 1.5rem;
+    background: none;
+    border: 0;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+    top: 21.5rem;
+    right: 1.7rem;
     display: none;
-    background-color: var(--red-color);
-    height: 100%;
 }
 
 nav a{
@@ -98,7 +108,7 @@ nav a:hover{
     color: var(--red-color);
 }
 
-.big-message{
+#big-message{
     border-top: 2px solid white ;
     color: white;
     font-weight: 500;
@@ -110,15 +120,16 @@ nav a:hover{
     justify-content: center;
     background: linear-gradient(to bottom, var(--red-color), var(--red-color), var(--red-color));
     min-height: 3em;
+    padding: 1em;
 }
 
-.big-message a {
+#big-message a {
     text-decoration: none;
     color: white;
     padding: 5px;
 }
 
-.big-message a:hover{
+#big-message a:hover{
     background-color: white;
     border-radius: .8rem;
     color: var(--red-color);
@@ -278,30 +289,36 @@ nav a:hover{
         display: none;
     }
 
-    .burguer-button::after{
-        content: "☰";
-    }
-
-    .burguer-button{
-        text-align: end;
-        padding:0 1em;
-        position: relative;
+    #menu{
         display: block;
-        margin-left: auto;
-        align-self: center;
-        justify-items: center;
-        width: 1em;
-        /* aqui te quedaste */
-
     }
-
 
     /* Open button */
-    .open {
-        display: flex;
-        flex-direction: column;
+    
+    #menu.open::before{
+        content: "X";
     }
 
+
+    nav.open{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav.open a{
+        display: flex;
+        width: 80%
+    }
+
+
+    header.open{
+        grid-template-rows: repeat(3, 10.6em);
+    }
+
+    /* Posts */
     .posts {
         display: flex;
         flex-direction: column;
@@ -312,10 +329,6 @@ nav a:hover{
         margin: 5px 0;
         text-align: center;
     }
-
-    
-
-
 
 }
 

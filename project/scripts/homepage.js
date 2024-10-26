@@ -1,5 +1,20 @@
 //Main page reviews are examples of what the use can find in this page: diversity of opinions
 
+const hamButton = document.querySelector("#menu");
+const navigation = document.querySelector("nav");
+const header =document.querySelector("header");
+
+hamButton.addEventListener("click", function(){
+  //To switch from ☰ to X
+  hamButton.classList.toggle("open");
+  //To open or close the nav
+  navigation.classList.toggle("open");
+  //To give more space to the nav, since it's a part of the header's flex
+  header.classList.toggle("open");
+
+})
+
+
 const reviews = [
     {
       user: "GamerX92",
