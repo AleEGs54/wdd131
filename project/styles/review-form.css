@@ -183,6 +183,7 @@ textarea{
 
 input[type="radio"]{
     margin-left: .5em;
+    margin-bottom: 1em;
 }
 
 textarea{

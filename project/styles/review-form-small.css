@@ -25,6 +25,11 @@
         height: 3em;
     }
 
+    input[type="radio"]{
+        /* the button */
+        margin: 1.2em 0;
+    }
+
     /* end form */
 
     .posts {
@@ -59,6 +64,7 @@
         height: 3em;
     }
 
+    
     /* end form */
 
 
