@@ -680,7 +680,8 @@ function DisplayingReviews() {
     
     
                     // assigning data to the elements
-                    userAndGame.innerHTML = `<span class="username">${review.user}</span>`;
+                    userAndGame.innerHTML = `<span class="username">${review.user}</span>`; 
+                    //  | <span class="game-name">${value}</span>`;
                     title.textContent = review.title;
                     reviewContent.textContent = review.review;
                     rating.textContent = setRatingStars(review.rating);
