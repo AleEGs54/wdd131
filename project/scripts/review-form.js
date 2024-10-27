@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // update the display
         timesPosted.textContent = reviewCount;
-        timesPostedContainer.style.display = "block";
         
 
         alert("Review sent successfully!"); // Confirmation message
