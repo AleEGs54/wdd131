@@ -32,6 +32,7 @@
     </header>
     <main>
         <div class="text-container"><p>Ready to submit your OWN review? <strong class="highlight">Let's Go</strong></p></div>
+        <div class="times-posted-container"><p>You have posted <span class="times-posted"></span> reviews! That's wholesome! Thanks for improving our page one review at a time</p></div>
         <form action="post">
             <fieldset class="username-fieldset">
                 <label>
@@ -61,17 +62,17 @@
                 <label><input type="radio" name="rating" id="five-star" value="5">⭐️⭐️⭐️⭐️⭐️</label>
             </fieldset>
             <fieldset class="title-fieldet">
-                <label>Review's Title: <input type="text" id="title" name="title" placeholder="The best buy ever!"></label>
+                <label>Review's Title: <input type="text" id="title" name="title" placeholder="The best buy ever!" required></label>
             </fieldset>
             <fieldset class="opinion-fieldset">
-                <label>Write your opinion: <textarea placeholder="I give this game 5 stars because..."></textarea></label>
+                <label>Write your opinion: <textarea placeholder="I give this game 5 stars because..." required></textarea></label>
             </fieldset>
             <fieldset class="agreement-fieldset">
                 <label>
-                    <input type="checkbox" name="terms-and-conditions-agreement" id="agreement" value="yes">
+                    <input required type="checkbox" name="terms-and-conditions-agreement" id="agreement" value="yes">
                     By selecting this checkbox, you agree to our Terms and Conditions and Privacy Policy.</label>
             </fieldset>
-            <input type="submit" value="Post Review">
+            <input type="submit" value="Post Review" class="submitButton">
         </form>
     </main>
     <footer>
