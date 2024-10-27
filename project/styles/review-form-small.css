@@ -4,24 +4,62 @@
 /* For medium size screens */
 @media screen and (max-width: 65em) {
 
+    /* Form */
+    form{
+        width: 100%;
+    }
+    input[type="text"],
+    textarea {
+        width: 50%;
+        height: 2em;
+    }
+
+    textarea{
+        height: 10em;
+        width: 80%;
+    }
+
+    input[type="submit"]{
+        /* the button */
+        width: 50%;
+        height: 3em;
+    }
+
+    /* end form */
+
     .posts {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .filter-container{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
 }
 
 /* For smaller screens */
 @media screen and (max-width: 46em) {
 
-    header{
+    header {
         grid-template-rows: 9.8em 3em;
     }
+
+    /* Form */
+
+    input[type="text"],
+    textarea {
+        width: 90%;
+        height: 2em;
+    }
+
+    textarea{
+        height: 10em;
+        width: 90%;
+    }
+
+    input[type="submit"]{
+        /* the button */
+        width: 80%;
+        height: 3em;
+    }
+
+    /* end form */
 
 
     /* Closed button */

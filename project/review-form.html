@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post a Review</title>
+    <title>Game Reviews</title>
+    <meta name="description" content="This page shows reviews for each videogame in our ranking">
+    <meta name="author" content="Alejandro Esteves">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/review-form.css">
+    <link rel="stylesheet" href="styles/review-form-small.css">
+    <script src="scripts/review-form.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <div class="h1-container">
+            <img src="images/videogames-wallpaper.webp" alt="background videogame wallpaper" loading="lazy">
+            <h1>The Game Glimpse</h1>
+        </div>
+        <a id="menu" href="#"></a>
+        <nav>
+            <a href="https://aleegs54.github.io/wdd131/project/index.html">Home</a>
+            <a href="https://aleegs54.github.io/wdd131/project/game-reviews.html">Game Reviews</a>
+            <a href="https://aleegs54.github.io/wdd131/project/review-form">Post a Review</a>
+        </nav>
+    </header>
+    <main>
+        <div class="text-container"><p>Ready to submit your OWN review? <strong class="highlight">Let's Go</strong></p></div>
+        <form action="post">
+            <fieldset class="username-fieldset">
+                <label>
+                    Username:
+                    <input type="text" name="username" id="username-field" placeholder="Player123" required>
+                </label>
+            </fieldset>
+            <fieldset class="email-fieldset">
+                <label>E-mail:
+                    <input type="text" name="email" id="email-input" placeholder="mymail@email.com">
+                    <br>
+                    <em>We use your e-mail to send you information about your reviews status, could be either approved or rejected.</em>
+                </label>
+            </fieldset>
+            <fieldset class="videogame-name-fieldset">
+                <label>Name of the videogame:
+                    <input type="text" name="videogame-name" id="game-name-field" placeholder="(i.e. Horizon Zero Down)"
+                        required>
+                </label>
+            </fieldset>
+            <fieldset class="rating-fieldset">
+                <legend>Rate your experience with that videogame:</legend>
+                <label><input type="radio" name="rating" id="one-star" value="1">⭐️</label>
+                <label><input type="radio" name="rating" id="two-star" value="2">⭐️⭐️</label>
+                <label><input type="radio" name="rating" id="three-star" value="3">⭐️⭐️⭐️</label>
+                <label><input type="radio" name="rating" id="four-star" value="4">⭐️⭐️⭐️⭐️</label>
+                <label><input type="radio" name="rating" id="five-star" value="5">⭐️⭐️⭐️⭐️⭐️</label>
+            </fieldset>
+            <fieldset class="title-fieldet">
+                <label>Review's Title: <input type="text" id="title" name="title" placeholder="The best buy ever!"></label>
+            </fieldset>
+            <fieldset class="opinion-fieldset">
+                <label>Write your opinion: <textarea placeholder="I give this game 5 stars because..."></textarea></label>
+            </fieldset>
+            <fieldset class="agreement-fieldset">
+                <label>
+                    <input type="checkbox" name="terms-and-conditions-agreement" id="agreement" value="yes">
+                    By selecting this checkbox, you agree to our Terms and Conditions and Privacy Policy.</label>
+            </fieldset>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span> 🐥 Alejandro Esteves 🐥 Lima, Peru</p>
+        <p class="lastModified" id="lastModified">lastModified</p>
+    </footer>
 </body>
+
 </html>
